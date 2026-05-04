@@ -343,12 +343,70 @@ section { padding: 7rem 0; }
 
 /* ---------- People ---------- */
 .people-section { padding: 5rem 0; }
-.people-section + .people-section { padding-top: 0; }
+.people-section:first-of-type { padding-top: 6rem; }
+.people-section + .people-section { padding-top: 5rem; }
+.people-subsection-head {
+  margin: 0 0 1.25rem;
+}
+.pi-split .person-card .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.pi-name { margin-bottom: 0.65rem; }
+.pi-role-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin: 0 0 2.75rem;
+}
+.pi-appointments {
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+.pi-appointments p { margin-bottom: 1.1rem; }
+.pi-appointments p:last-child { margin-bottom: 0; }
+.pi-appointment-org {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.35rem;
+  font-family: 'DM Sans', sans-serif;
+}
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 2.25rem;
+}
+h4.people-subsection-head + .people-grid {
+  margin-top: 2rem;
+}
+.people-grid--members {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .people-grid--members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 960px) {
+  .people-grid--members {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+.people-grid--members .person-card .photo {
+  aspect-ratio: 4 / 5;
+  min-height: 280px;
 }
 .person-card .photo {
   aspect-ratio: 1 / 1.15;
@@ -449,31 +507,30 @@ section { padding: 7rem 0; }
     </nav>
   </header>
 
-  <section class="page-header">
-    <div class="container">
-      <span class="eyebrow rise">People</span>
-    </div>
-  </section>
-
   <!-- PI -->
   <section class="people-section">
     <div class="container">
-      <h4>Principal Investigator</h4>
-      <div class="story-block" style="margin-top: 2rem;">
+      <div class="story-block pi-split" style="margin-top: 0;">
         <div>
           <div class="person-card">
             <div class="photo" style="background-image: none;">
-              <img src="stephanie.jpg" alt="Stephanie Z. Xie" style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
+              <img src="stephanie.jpg" alt="Stephanie Z. Xie">
             </div>
           </div>
         </div>
         <div>
-          <h2>Stephanie Z. Xie, Ph.D.</h2>
-          <p style="color: var(--ink-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">
-            
-            Allan Slaight Scientist, Princess Margaret Cancer Centre<br>
-            Assistant Professor, Department of Medical Biophysics, University of Toronto
-          </p>
+          <h2 class="pi-name">Stephanie Z. Xie</h2>
+          <p class="pi-role-label">Principal Investigator</p>
+          <div class="pi-appointments">
+            <p>
+              <span class="pi-appointment-org">Princess Margaret Cancer Centre · University Health Network</span>
+              Allan Slaight Scientist
+            </p>
+            <p>
+              <span class="pi-appointment-org">University of Toronto</span>
+              Assistant Professor, Department of Medical Biophysics
+            </p>
+          </div>
           <p>
             Stephanie received her B.A. in biology at the University of Chicago and her Ph.D. at the
             Massachusetts Institute of Technology. She went on to postdoctoral fellowships at the
@@ -501,12 +558,8 @@ section { padding: 7rem 0; }
   <!-- LAB MEMBERS -->
   <section class="people-section" style="background: var(--bg-alt);">
     <div class="container">
-      <h4>Lab Members</h4>
-      <div class="people-grid">
-
-        
-
-        
+      <h4 class="people-subsection-head">Lab Members</h4>
+      <div class="people-grid people-grid--members">
 
         <div class="person-card">
           <div class="photo" style="background-image: none;">
@@ -539,8 +592,8 @@ section { padding: 7rem 0; }
   <!-- ALUMNI -->
   <section class="people-section">
     <div class="container">
-      <h4>Alumni</h4>
-      <p style="margin-top: 2rem; color: var(--ink-muted);">
+      <h4 class="people-subsection-head">Alumni</h4>
+      <p style="margin-top: 0; color: var(--ink-muted);">
         <em>Lab alumni will be listed here as people complete their training.</em>
       </p>
     </div>
