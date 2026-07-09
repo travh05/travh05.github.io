@@ -323,7 +323,7 @@ section { padding: 7rem 0; }
 
 /* ---------- People ---------- */
 .people-section { padding: 5rem 0; }
-.people-section + .people-section { padding-top: 0; }
+.people-section + .people-section { padding-top: 4rem; }
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
