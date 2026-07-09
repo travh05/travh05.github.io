@@ -113,15 +113,20 @@ section { padding: 7rem 0; }
   position: relative;
   overflow: hidden;
 }
+.hero .container {
+  max-width: none;
+  padding-left: max(2rem, calc((100vw - 1200px) / 2 + 2rem));
+  padding-right: 2rem;
+}
 .hero-grid {
   display: grid;
-  grid-template-columns: 0.8fr 1.85fr;
-  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  gap: 2.5rem;
   align-items: center;
 }
 .hero h1 {
   margin-bottom: 1.5rem;
-  font-size: clamp(1.9rem, 3.4vw, 3.3rem);
+  font-size: clamp(2.1rem, 4vw, 4.2rem);
   overflow-wrap: break-word;
 }
 .hero h1 em {
@@ -138,13 +143,11 @@ section { padding: 7rem 0; }
 .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 .hero-image {
-  aspect-ratio: 1.42 / 1;
   position: relative;
 }
 .hero-image img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
   display: block;
 }
 
