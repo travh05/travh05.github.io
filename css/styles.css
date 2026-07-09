@@ -115,13 +115,13 @@ section { padding: 7rem 0; }
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1.55fr;
-  gap: 2rem;
+  grid-template-columns: 0.8fr 1.85fr;
+  gap: 1.5rem;
   align-items: center;
 }
 .hero h1 {
   margin-bottom: 1.5rem;
-  font-size: clamp(2.1rem, 4.2vw, 4.1rem);
+  font-size: clamp(1.9rem, 3.4vw, 3.3rem);
   overflow-wrap: break-word;
 }
 .hero h1 em {
