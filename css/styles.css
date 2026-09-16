@@ -398,6 +398,59 @@ section { padding: 7rem 0; }
   line-height: 1.6;
   font-size: 0.875rem !important;
 }
+
+/* Clickable member cards */
+.person-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.person-link .photo,
+.person-link h4 { transition: opacity .2s, color .2s; }
+.person-link:hover .photo { opacity: 0.88; }
+.person-link:hover h4 { color: var(--brand); }
+.person-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  transition: color .2s;
+}
+.person-more::after { content: '\2192'; transition: transform .2s; }
+.person-link:hover .person-more { color: var(--brand); }
+.person-link:hover .person-more::after { transform: translateX(3px); }
+.person-link:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 6px;
+}
+
+/* Individual profile pages */
+.person-portrait {
+  aspect-ratio: 1 / 1.15;
+  background-image: linear-gradient(135deg, #F0DDD8 0%, #F2EBE3 100%);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.portrait-letter {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--brand);
+}
 .person-bio + .person-bio { margin-top: 0.75rem !important; }
 
 /* ---------- Publications ---------- */
