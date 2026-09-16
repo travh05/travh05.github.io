@@ -311,6 +311,14 @@ section { padding: 7rem 0; }
 }
 .alumni-list li:last-child { border-bottom: none; }
 .alumni-list span { color: var(--ink-muted); }
+.alumni-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  flex-shrink: 0;
+}
 
 /* ---------- Footer ---------- */
 .site-footer {
