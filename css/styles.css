@@ -387,6 +387,7 @@ section { padding: 7rem 0; }
   line-height: 1.6;
   font-size: 0.875rem !important;
 }
+.person-bio + .person-bio { margin-top: 0.75rem !important; }
 
 /* ---------- Publications ---------- */
 .pub-list { list-style: none; }
