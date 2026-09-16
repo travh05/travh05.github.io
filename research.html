@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Xie Lab</title>
+  <meta name="description" content="How inflammatory experiences leave lasting molecular memories in human blood stem cells, and how these changes influence healthy aging, clonal hematopoiesis, and leukemia.">
+  <link rel="canonical" href="https://xielab.ca/research.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Xie Lab">
+  <meta property="og:title" content="Research — Xie Lab">
+  <meta property="og:description" content="How inflammatory experiences leave lasting molecular memories in human blood stem cells, and how these changes influence healthy aging, clonal hematopoiesis, and leukemia.">
+  <meta property="og:url" content="https://xielab.ca/research.html">
+  <meta property="og:image" content="https://xielab.ca/research_diagram.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,8 +24,8 @@
   <header class="site-header">
     <nav class="nav">
       <a href="index.html" class="nav-logo"><img src="xie_logo.png" alt="Xie Lab"></a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html" class="active">Research</a></li>
         <li><a href="people.html">People</a></li>
@@ -227,7 +236,8 @@
 
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function() {
-      document.querySelector('.nav-links').classList.toggle('open');
+      var open = document.querySelector('.nav-links').classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
     });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
