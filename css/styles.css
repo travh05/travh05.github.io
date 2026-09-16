@@ -284,6 +284,33 @@ section { padding: 7rem 0; }
   object-fit: contain;
   display: block;
 }
+.affiliation-heading {
+  color: var(--ink-muted);
+  margin: 4rem 0 2rem;
+}
+.affiliation-grid {
+  max-width: 760px;
+}
+.affiliation-grid .funder-logo {
+  height: 130px;
+}
+
+/* ---------- Alumni ---------- */
+.alumni-list {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+}
+.alumni-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.alumni-list li:last-child { border-bottom: none; }
+.alumni-list span { color: var(--ink-muted); }
 
 /* ---------- Footer ---------- */
 .site-footer {
