@@ -378,6 +378,15 @@ section { padding: 7rem 0; }
 }
 .person-card h4 { font-size: 1.1rem; text-transform: none; letter-spacing: 0; margin-bottom: 0.25rem; font-family: 'DM Sans', sans-serif; }
 .person-card p { font-size: 0.9rem; color: var(--ink-muted); margin: 0; }
+.person-role {
+  font-weight: 500;
+  color: var(--ink) !important;
+  margin-bottom: 0.6rem !important;
+}
+.person-bio {
+  line-height: 1.6;
+  font-size: 0.875rem !important;
+}
 
 /* ---------- Publications ---------- */
 .pub-list { list-style: none; }
