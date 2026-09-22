@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuhan — Xie Lab</title>
+  <meta name="description" content="Yuhan, PhD Student, Medical Biophysics in the Xie Lab at Princess Margaret Cancer Centre.">
+  <link rel="canonical" href="https://xielab.ca/people/yuhan.html">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Xie Lab">
+  <meta property="og:title" content="Yuhan — Xie Lab">
+  <meta property="og:description" content="Yuhan, PhD Student, Medical Biophysics in the Xie Lab at Princess Margaret Cancer Centre.">
+  <meta property="og:url" content="https://xielab.ca/people/yuhan.html">
+  <meta property="og:image" content="https://xielab.ca/research_diagram.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../xie_logo.png">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav-logo"><img src="../xie_logo.png" alt="Xie Lab"></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../people.html" class="active">People</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow rise">PhD Student, Medical Biophysics</span>
+      <h1 class="rise d1">Yuhan</h1>
+    </div>
+  </section>
+
+  <section class="people-section">
+    <div class="container">
+      <div class="story-block">
+        <div>
+          <div class="person-portrait"><span class="portrait-letter">Y</span></div>
+        </div>
+        <div>
+          <p>Yuhan received her B.Eng. in Pharmaceutical Engineering from Central South University in China and completed her M.Sc. in Pharmaceutical Science and Technology at the National University of Singapore. She is currently a PhD student in Medical Biophysics at the University of Toronto. Her current research focuses on understanding how inflammatory cues influence leukemia cell states and how these changes affect disease progression and response to treatment.</p>
+          <p>Outside the lab, she enjoys journaling and exploring different boba shops.</p>
+          <p style="margin-top: 2.5rem;">
+            <a href="../people.html" class="arrow-link">Back to all people</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">Xie <em>Lab</em></span>
+          <p style="opacity: 0.7; max-width: 40ch;">
+            Princess Margaret Cancer Centre, University Health Network<br>
+            Department of Medical Biophysics, University of Toronto<br>
+            Toronto, Ontario, Canada
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../people.html">People</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://bsky.app/profile/stephxie.bsky.social">Bluesky</a></li>
+            <li><a href="https://www.linkedin.com/in/stephaniexielab/">LinkedIn</a></li>
+            <li><a href="https://scholar.google.com/citations?user=MbxBhZsAAAAJ">Google Scholar</a></li>
+            <li><a href="https://www.uhnresearch.ca/researcher/stephanie-xie">UHN Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Xie Lab. All rights reserved.</span>
+        <span>Princess Margaret Cancer Centre · Toronto</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      var open = document.querySelector('.nav-links').classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
