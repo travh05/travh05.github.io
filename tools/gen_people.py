@@ -39,7 +39,7 @@ PEOPLE = [
     dict(
         slug='yuhan', name='Yuhan',
         role='PhD Student, Medical Biophysics',
-        letter='Y',
+        photo='yuhan.jpg',
         bio=[
             "Yuhan received her B.Eng. in Pharmaceutical Engineering from Central South "
             "University in China and completed her M.Sc. in Pharmaceutical Science and "
