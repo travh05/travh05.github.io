@@ -37,21 +37,6 @@ PEOPLE = [
         bio=[],
     ),
     dict(
-        slug='yuhan', name='Yuhan',
-        role='PhD Student, Medical Biophysics',
-        photo='yuhan.jpg',
-        bio=[
-            "Yuhan received her B.Eng. in Pharmaceutical Engineering from Central South "
-            "University in China and completed her M.Sc. in Pharmaceutical Science and "
-            "Technology at the National University of Singapore. She is currently a PhD "
-            "student in Medical Biophysics at the University of Toronto. Her current "
-            "research focuses on understanding how inflammatory cues influence leukemia "
-            "cell states and how these changes affect disease progression and response "
-            "to treatment.",
-            "Outside the lab, she enjoys journaling and exploring different boba shops.",
-        ],
-    ),
-    dict(
         slug='travis', name='Travis',
         role='Research Student',
         letter='T',
@@ -81,6 +66,21 @@ PEOPLE = [
             "biochemistry at McMaster University in 2025, studying cellular mechanisms of "
             "leukemia relapse. Outside the lab, Cam enjoys running and spending time in the "
             "outdoors.",
+        ],
+    ),
+    dict(
+        slug='yuhan', name='Yuhan',
+        role='PhD Student, Medical Biophysics',
+        photo='yuhan.jpg',
+        bio=[
+            "Yuhan received her B.Eng. in Pharmaceutical Engineering from Central South "
+            "University in China and completed her M.Sc. in Pharmaceutical Science and "
+            "Technology at the National University of Singapore. She is currently a PhD "
+            "student in Medical Biophysics at the University of Toronto. Her current "
+            "research focuses on understanding how inflammatory cues influence leukemia "
+            "cell states and how these changes affect disease progression and response "
+            "to treatment.",
+            "Outside the lab, she enjoys journaling and exploring different boba shops.",
         ],
     ),
     dict(
