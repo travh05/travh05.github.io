@@ -34,7 +34,14 @@ PEOPLE = [
         slug='isabella', name='Isabella',
         role='PhD Student, Medical Biophysics',
         photo='isabella.jpg',
-        bio=[],
+        bio=[
+            "Isabella received her BSc in Biochemistry from the University of Waterloo in "
+            "2025. She subsequently joined the Xie Lab as a PhD student, where her current "
+            "research focuses on understanding how inflammation and metabolic factors "
+            "influence HSC behaviour and contribute to the development of clonal "
+            "hematopoiesis and leukemia. Isabella is equally passionate about cooking, "
+            "crocheting, and spending time with her dog.",
+        ],
     ),
     dict(
         slug='travis', name='Travis',
